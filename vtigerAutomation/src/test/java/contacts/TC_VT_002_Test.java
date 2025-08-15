@@ -23,7 +23,7 @@ public class TC_VT_002_Test extends BaseClass {
 		cp.getCreateIcon().click();
 		cp.getLastname().sendKeys(eutil.getStringDataFromExcel("Contacts", 1, 0));
 		cp.getSavebutton().click();
-		Assert.assertEquals(cp.getHeaderTextField(),true);
+		Assert.assertEquals(cp.getHeaderTextField().isDisplayed(),true);
 		test.log(Status.PASS,"Contact has been created wit hlast name");
 		
 	}

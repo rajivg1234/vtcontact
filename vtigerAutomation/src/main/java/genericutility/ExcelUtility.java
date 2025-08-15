@@ -21,7 +21,7 @@ public class ExcelUtility {
 	 * @throws IOException
 	 */
 	public String getStringDataFromExcel(String sheetName,int rowIndex,int colIndex) throws EncryptedDocumentException, IOException {
-		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/testScriptData.xlsx");
+		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/Testcasevt.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		return wb.getSheet(sheetName).getRow(rowIndex).getCell(colIndex).getStringCellValue();
 	}
@@ -35,7 +35,7 @@ public class ExcelUtility {
 	 * @throws IOException
 	 */
 	public double getNumericDataFromExcel(String sheetName,int rowIndex,int colIndex) throws EncryptedDocumentException, IOException {
-		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/TestScriptData.xlsx");
+		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/Testcasevt.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		return wb.getSheet(sheetName).getRow(rowIndex).getCell(colIndex).getNumericCellValue();
 	}
@@ -49,7 +49,7 @@ public class ExcelUtility {
 	 * @throws IOException
 	 */
 	public boolean getBooleanDataFromExcel(String sheetName,int rowIndex,int colIndex) throws EncryptedDocumentException, IOException {
-		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/TestScriptData.xlsx");
+		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/Testcasevt.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		return wb.getSheet(sheetName).getRow(rowIndex).getCell(colIndex).getBooleanCellValue();
 	}
@@ -63,7 +63,7 @@ public class ExcelUtility {
 	 * @throws IOException
 	 */
 	public LocalDateTime getLocalDateTimeDataFromExcel(String sheetName,int rowIndex,int colIndex) throws EncryptedDocumentException, IOException {
-		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/TestScriptData.xlsx");
+		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/Testcasevt.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		return wb.getSheet(sheetName).getRow(rowIndex).getCell(colIndex).getLocalDateTimeCellValue();
 	}
