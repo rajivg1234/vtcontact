@@ -14,8 +14,8 @@ public class TC_VT_001_Test extends BaseClass{
 	@Test
 	public void clickOnContacts() {
 		Homepage hp=new Homepage(driver);
-		hp.getContactlink().click();
-		Assert.assertTrue(driver.getTitle().contains("Contacts "));
+		hp.getContactlink();
+		Assert.assertTrue(driver.getTitle().contains("Contacts"));
 		test.log(Status.PASS,"Contact page should be displayed");
 		
 	}

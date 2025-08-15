@@ -21,7 +21,7 @@ public class TC_VT_002_Test extends BaseClass {
 		hp.getContactlink().click();
 		Contactpage cp=new Contactpage(driver);
 		cp.getCreateIcon().click();
-		cp.getLastname().sendKeys(eutil.getStringDataFromExcel("Contacts ", 1, 0));
+		cp.getLastname().sendKeys(eutil.getStringDataFromExcel("Contacts", 1, 0));
 		cp.getSavebutton().click();
 		Assert.assertEquals(cp.getHeaderTextField(),true);
 		test.log(Status.PASS,"Contact has been created wit hlast name");
