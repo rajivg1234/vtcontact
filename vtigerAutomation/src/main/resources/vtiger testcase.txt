@@ -1,0 +1,46 @@
+TC_VT_001====>Verify user is able to click on Contact link
+------------------------------------------------------------------------
+	-open browser and enter url
+	-Enter valid credentials
+	-Click on Contacts link
+Expected result=Contact page should be displayed
+
+TC_VT_002====>Verify user is able to create contact with mandatory fields
+-------------------------------------------------------------------------
+	-open browser and enter url
+	-Enter valid credentials
+	-Click on Contacts link
+	-click on create contact Icon(+)
+	-Enter lastname
+	-Click on save button
+Expected result=Contact should be created with last name
+
+TC_VT_011====>Verify user is able to click on Organization link
+------------------------------------------------------------------------
+	-open browser and enter url
+	-Enter valid credentials
+	-Click on  Organization link
+	-click on create contact Icon(+)
+	
+Expected result=Organization page should be displayed
+
+TC_VT_012====>Verify user is able create Organization with mandatory fields
+-------------------------------------------------------------------------------
+	-open browser and enter url
+	-Enter valid credentials
+	-Click on Contacts link
+	-click on create Organization Icon(+)
+	-Enter Organization name
+	-Click on save button
+Expected result=Organization should be created with Organization name
+
+
+	
+
+
+
+
+	
+
+
+
